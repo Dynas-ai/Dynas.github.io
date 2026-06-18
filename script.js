@@ -62,7 +62,7 @@ function drawParticles() {
         if (p.y > canvas.height) p.y = 0;
         ctx.beginPath();
         ctx.arc(p.x, p.y, p.radius, 0, Math.PI * 2);
-        ctx.fillStyle = `rgba(${p.color}, 0.4)`;
+        ctx.fillStyle = `rgba(${p.color}, 0.8)`;
         ctx.fill();
     });
     requestAnimationFrame(drawParticles);
